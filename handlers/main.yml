@@ -26,7 +26,7 @@
         - ansible_lsb.codename == "trusty"
       listen: openvpn save iptables
 
-    - name: Save the rules (Ubuntu)
+    - name: Save the rules (Ubuntu other)
       command: netfilter-persistent save
       when:
         - ansible_os_family == "Debian"
